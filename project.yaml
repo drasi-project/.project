@@ -1,0 +1,73 @@
+# .project metadata for Drasi
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Set slack_channels
+# TODO: Add adopters list (ADOPTERS.md)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "drasi"
+name: "Drasi"
+description: "A data change processing platform to simplify change-driven systems that need to detect, evaluate, and react to data changes quickly and efficiently at scale."
+type: "project"
+project_lead: "agentofreality" # TODO: AUTO-DETECTED — please verify
+# TODO: Set CNCF Slack channel(s)
+# slack_channels:
+#   - name: "#drasi"
+#     primary: true
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2025-01-21T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/296" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "http://github.com/drasi-project/drasi-platform"
+
+website: "https://drasi.io"
+
+artwork: "https://landscape.cncf.io/logos/drasi.svg"
+
+# TODO: Add ADOPTERS.md if your project tracks adopters
+# adopters:
+#   path: "https://github.com/drasi-project/drasi-platform/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "drasi-project/drasi-platform"
+
+social:
+  twitter: "https://twitter.com/drasi_project"
+
+security:
+  policy:
+    path: "https://github.com/drasi-project/.github/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/drasi-project/drasi-platform/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/drasi-project/.github/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/drasi-project/.github/blob/main/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/drasi-project/drasi-platform/blob/main/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/drasi-project/drasi-platform/blob/main/README.md"
+
+landscape:
+  category: "App Definition and Development"
+  subcategory: "Streaming & Messaging"
+
+# CLOMonitor Score: 49/100
+# Documentation: 76 | License: 43 | Best Practices: 26 | Security: 24
