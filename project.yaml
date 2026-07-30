@@ -1,28 +1,35 @@
 # .project metadata for Drasi
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Set slack_channels
+# Note: Community chat is on Discord (see social.discord) in addition to the CNCF Slack channel
 # TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
 slug: "drasi"
 name: "Drasi"
 description: "A data change processing platform to simplify change-driven systems that need to detect, evaluate, and react to data changes quickly and efficiently at scale."
 type: "project"
-project_lead: "agentofreality" # TODO: AUTO-DETECTED — please verify
-# TODO: Set CNCF Slack channel(s)
-# slack_channels:
-#   - name: "#drasi"
-#     primary: true
+project_lead: "agentofreality"
+
+slack_channels:
+  - name: "#drasi"
+    workspace: "cncf"
+    link: "https://cloud-native.slack.com/archives/C0BLUF0715Z"
+    primary: true
 
 maturity_log:
   - phase: "sandbox"
     date: "2025-01-21T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/296" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/296"
 
 repositories:
-  - "http://github.com/drasi-project/drasi-platform"
+  - "https://github.com/drasi-project/drasi-platform"
+  - "https://github.com/drasi-project/drasi-server"
+  - "https://github.com/drasi-project/drasi-core"
+  - "https://github.com/drasi-project/learning"
+  - "https://github.com/drasi-project/learning-drasi-server"
+  - "https://github.com/drasi-project/docs"
+  - "https://github.com/drasi-project/demo"
 
 website: "https://drasi.io"
 
@@ -33,12 +40,14 @@ artwork: "https://landscape.cncf.io/logos/drasi.svg"
 #   path: "https://github.com/drasi-project/drasi-platform/blob/main/ADOPTERS.md"
 
 
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "drasi-project/drasi-platform"
+package_managers:
+  cargo: "drasi-lib"
+  github: "drasi-project/drasi-server"
+  ghcr: "drasi-project/drasi-server"
 
 social:
   twitter: "https://twitter.com/drasi_project"
+  discord: "https://discord.gg/aWvtusxkC"
 
 security:
   policy:
@@ -56,14 +65,14 @@ legal:
   license:
     path: "https://github.com/drasi-project/drasi-platform/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
 documentation:
   readme:
-    path: "https://github.com/drasi-project/drasi-platform/blob/main/README.md"
+    path: "https://github.com/drasi-project/drasi-server/blob/main/README.md"
 
 landscape:
   category: "App Definition and Development"
