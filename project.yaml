@@ -1,7 +1,7 @@
 # .project metadata for Drasi
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# Note: Drasi does not use CNCF Slack; community chat is on Discord (see social.discord)
+# Note: Community chat is on Discord (see social.discord) in addition to the CNCF Slack channel
 # TODO: Add adopters list (ADOPTERS.md)
 
 schema_version: "1.0.0"
@@ -11,13 +11,19 @@ description: "A data change processing platform to simplify change-driven system
 type: "project"
 project_lead: "agentofreality"
 
+slack_channels:
+  - name: "#drasi"
+    workspace: "cncf"
+    link: "https://cloud-native.slack.com/archives/C0BLUF0715Z"
+    primary: true
+
 maturity_log:
   - phase: "sandbox"
     date: "2025-01-21T00:00:00Z"
     issue: "https://github.com/cncf/sandbox/issues/296"
 
 repositories:
-  - "http://github.com/drasi-project/drasi-platform"
+  - "https://github.com/drasi-project/drasi-platform"
   - "https://github.com/drasi-project/drasi-server"
   - "https://github.com/drasi-project/drasi-core"
   - "https://github.com/drasi-project/learning"
@@ -60,7 +66,7 @@ legal:
     path: "https://github.com/drasi-project/drasi-platform/blob/main/LICENSE"
   identity_type:
     has_dco: true
-    has_cla: false 
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
