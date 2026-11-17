@@ -26,7 +26,7 @@ repositories:
 
 website: "https://drasi.io"
 
-artwork: "https://landscape.cncf.io/logos/drasi.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/drasi"
 
 # TODO: Add ADOPTERS.md if your project tracks adopters
 # adopters:
